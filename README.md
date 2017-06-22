@@ -37,7 +37,7 @@ $ git clone https://github.com/r-takanoyuri/corporate-site.git
 ## 推奨環境(2017.06.22現在)
 ```
 Windows
-　├　Internet Explorer 11
+　├　Internet Explorer 11.x
 　├　Microsoft Edge
 　├　Mozilla FireFox 最新版
 　└　Google Chrome 最新版
@@ -51,5 +51,5 @@ Macintosh
 　├　iOS
 　　└　Safari 最新版（iOS 7以上）
 　└　Android
-　　└　標準ブラウザ 最新版（Android 4.4以上）
+　　└　標準ブラウザ 最新版（Android 4.4以上）※Android標準ブラウザは動作保障対象外
  ```
