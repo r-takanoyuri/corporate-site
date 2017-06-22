@@ -1,0 +1,66 @@
+/*
+#styleguide
+
+h2見出し
+*/
+
+
+
+.rowTitle {
+	padding: 0 0 5px;
+	border-bottom: 2px solid #e5e5e5;
+	font-size: 28px;
+	font-size: 2.8rem;
+}
+.rowTitle--middle {
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: normal;
+}
+
+.pressTitle {
+	padding: 0 0 5px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #e5e5e5;
+	font-size: 30px;
+	font-size: 3rem;
+	a {
+		display: initial;
+		&:after {
+			content: '';
+			display: inline-block;
+			position: relative;
+			width: 10px;
+			height: 17px;
+			top: -1px;
+			left: 10px;
+			background: url(../../assets/img/layout/icn_arrow.svg) 0 0 no-repeat;
+			background-size: 10px auto;
+		}
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.rowTitle {
+		padding: 0;
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+	.rowTitle--middle {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+	.pressTitle {
+		margin-bottom: 10px;
+		font-size: 20px;
+		font-size: 2rem;
+		a {
+			&:after {
+				width: 10px;
+				height: 11px;
+				top: -2px;
+				background-size: 7px auto;
+			}
+		}
+	}
+}

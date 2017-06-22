@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*
+#overview
+トップページ用CSS
+
+*/
+.topMedia {
+  position: relative;
+  overflow: hidden; }
+  .topMedia img {
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin: auto; }
+  .topMedia .mainLogo {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    width: 200px;
+    min-width: 200px;
+    min-height: auto;
+    height: auto;
+    margin: 0;
+    margin-left: -100px;
+    padding: 20px 0;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    z-index: 2; }
+  .topMedia__anchor {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    z-index: 1; }
+    .topMedia__anchor a {
+      display: inline-block;
+      background: url(../../assets/img/layout/icn_scroll_arrow.svg) 0 0 no-repeat;
+      background-size: 35px 30px;
+      width: 35px;
+      height: 30px;
+      text-align: center;
+      color: #ffffff; }
+
+@media only screen and (max-width: 1000px) {
+  .topMedia .topMedia-img {
+    display: none; } }
+
+@media only screen and (max-width: 640px) {
+  .topMedia .mainLogo {
+    width: 150px;
+    min-width: 150px;
+    margin-left: -75px;
+    top: 35%; } }

@@ -1,0 +1,246 @@
+/*
+#overview
+コンテンツレイアウト
+
+*/
+
+.top {
+	&__companyImage,
+	&__contactImage {
+		position: relative;
+		height: 300px;
+		overflow: hidden;
+		img {
+			position: absolute;
+			top: -100%;
+			right: -100%;
+			bottom: -100%;
+			left: -100%;
+			width: auto;
+			min-width: 100%;
+			height: auto;
+			min-height: 100%;
+			margin: auto;
+		}
+	}
+}
+
+
+.section {
+	&__innerImage {
+		position: relative;
+		height: 300px;
+		overflow: hidden;
+		img {
+			position: absolute;
+			top: -100%;
+			right: -100%;
+			bottom: -100%;
+			left: -100%;
+			width: auto;
+			min-width: 100%;
+			height: auto;
+			min-height: 100%;
+			margin: auto;
+		}
+	}
+	&__newsCol {
+		background-color: #415b7f;
+		color: #ffffff;
+		&__inner {
+			position: relative;
+			width: 960px;
+			margin: 0 auto;
+			padding: 20px 0;
+			box-sizing: border-box;
+			.item--title {
+				display: flex;
+				padding-bottom: 20px;
+				font-size: 16px;
+				font-size: 1.6rem;
+			}
+			.item--date {
+				width: 20%;
+				display: table-cell;
+				vertical-align: top;
+			}
+			.item--meta {
+				width: 100%;
+				display: table-cell;
+				a {
+					color: #ffffff;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	&__companyCol,
+	&__contactCol,
+	&__guideCol,
+	&__contentsCol,
+	&__sitemapCol,
+	&__pressCol {
+		padding: 30px 8% 50px;
+		box-sizing: border-box;
+		.tableBox {
+			display: inline-block;
+			width: 47.2%;
+			vertical-align: top;
+			&:first-child {
+				padding-right: 5%;
+			}
+		}
+	}
+	&__guideCol {
+		.tableBox {
+			width: 100%;
+			&:first-child {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+.heading__wrap {
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	width: 100%;
+	padding: 15px 0;
+	// background-color: #ffffff;
+	opacity: 0.8;
+	z-index: 1;
+	&__inner {
+		width: auto;
+		text-align: center;
+		line-height: 1;
+		z-index: 2;
+		.item--title {
+			font-family: YuMincho, 'Yu Mincho', serif;
+			font-size: 34px;
+			font-weight: normal;
+			text-shadow: 0 0 10px #000;
+			color: #fff;
+			.c-phonetic {
+				vertical-align: super;
+				text-align: center;
+				font-size: 16px;
+				text-shadow: 0 0 10px #000;
+				color: #fff;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.top {
+		&__companyImage,
+		&__contactImage {
+			height: 200px;
+		}
+	}
+	.section {
+		&__innerImage {
+			max-height: 200px;
+		}
+		&__newsCol {
+			padding: 20px 8%;
+			background-color: #415b7f;
+			color: #ffffff;
+			&__inner {
+				width: 100%;
+				.item--title {
+					width: auto;
+					text-align: left;
+				}
+				.item--date {
+					width: auto;
+					display: block;
+					text-align: left;
+				}
+				.item--meta {
+					width: auto;
+					display: block;
+				}
+			}
+		}
+		&__companyCol,
+		&__contactCol {
+			.tableBox {
+				width: 100%;
+				display: block;
+				&:first-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.top {
+		&__companyImage,
+		&__contactImage {
+			height: 142px;
+		}
+	}
+	.section {
+		&__innerImage {
+			height: 130px;
+		}
+		&__sitemapCol {
+			.tableBox {
+				width: 100%;
+				display: block;
+				&:first-child {
+					padding-right: 0;
+				}
+			}
+		}
+		&__companyCol,
+		&__contactCol,
+		&__contentsCol,
+		&__sitemapCol,
+		&__pressCol {
+			padding: 20px;
+			.tableBox {
+				width: 100%;
+				.tableBody {
+					margin-bottom: 20px;
+				}
+				&:first-child {
+					padding-right: 5%;
+				}
+			}
+		}
+		&__newsCol {
+			&__inner {
+				.item--title {
+					margin-bottom: 0;
+					font-size: 14px;
+					font-size: 1.4rem;
+				}
+				.item--date,
+				.item--meta {
+					font-size: 12px;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+	.heading__wrap {
+		margin-top: -36px;
+		&__inner {
+			bottom: 40px;
+			.item--title {
+				font-size: 20px;
+				font-size: 2rem;
+				.c-phonetic {
+					font-size: 10px;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}

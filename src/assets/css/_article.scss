@@ -1,0 +1,168 @@
+/*
+#overview
+ニュース
+記事
+
+*/
+
+
+.section {
+	&__pressCol {
+		&__anchorList {
+			> li {
+				padding-bottom: 20px;
+				border-bottom: 1px dotted #cccccc;
+				margin-bottom: 20px;
+			}
+			.item--date {
+				width: 20%;
+				vertical-align: top;
+				font-size: 12px;
+				font-size: 1.2rem;
+			}
+			.item--value {
+				width: 20%;
+				float: left;
+				&__type {
+					border-radius: 15px;
+					color: #fff;
+					font-size: 11px;
+					font-size: 1.1rem;
+					padding: 5px 10px;
+					&.club {
+						background: #123049;
+					}
+					&.loan {
+						background: #073773;
+					}
+					&.career {
+						background: #0094DC;
+					}
+				}
+			}
+			.item--meta {
+				width: 80%;
+				float: left;
+				margin-top: -25px;
+				a {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	&__articleCol {
+		.article--title {
+			border-bottom: 1px solid #415b7f;
+			padding: 0 0 20px;
+			margin-bottom: 20px;
+			font-size: 24px;
+			font-family: 2.4rem;
+			line-height: 1.5;
+		}
+		&__body {
+			margin-top: 20px;
+			> p, ul {
+				padding-bottom: 30px;
+				> li {
+					list-style-type: circle;
+					margin-left: 1.5em;
+				}
+			}
+			.wide {
+				img {
+					width: 75%;
+				}
+			}
+			small {
+				font-size: 12px;
+				font-size: 1.2rem;
+			}
+			.article--head {
+				margin-bottom: 10px;
+				padding: 0 0 0 10px;
+				border-left: 4px solid #415b7f;
+				background: #e6ebf0;
+				font-size: 20px;
+				font-size: 2rem;
+				&__middle {
+					border-bottom: 1px dotted #415b7f;
+					padding-bottom: 5px;
+					margin-bottom: 10px;
+					font-size: 16px;
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.section {
+		&__articleCol {
+			&__body {
+				.wide {
+					img {
+						width: 75%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.section {
+		&__pressCol {
+			&__anchorList {
+				> li {
+					padding-bottom: 20px;
+				}
+				.item--date {
+					width: 90px;
+					float: left;
+					margin-top: .2em;
+				}
+				.item--value {
+					width: 100%;
+					float: none;
+				}
+				.item--meta {
+					width: 100%;
+					float: none;
+					margin-top: 10px;
+				}
+			}
+		}
+		&__articleCol {
+			.article--title {
+				padding: 0 0 10px;
+				margin-bottom: 10px;
+				font-size: 18px;
+				font-size: 1.8rem;
+			}
+			.article--date,
+			.article--corp {
+				font-size: 12px;
+				font-size: 1.2rem;
+			}
+			.article--head {
+				font-size: 16px;
+				font-size: 1.6rem;
+				line-height: 1.5em;
+				&__middle {
+					font-size: 14px;
+					font-size: 1.4rem;
+					line-height: 1.5em;
+				}
+			}
+			&__body {
+				.wide {
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

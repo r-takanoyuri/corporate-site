@@ -1,0 +1,363 @@
+@charset "UTF-8";
+/*
+#overview
+ベースCSS
+
+*/
+/* Initialize
+   ========================================================================== */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, main,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* Display
+   ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+html {
+  font-size: medium; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* Fonts
+   ========================================================================== */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 100%;
+  font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal; }
+
+dt, dd, li, caption, th, td, col, h1, h2, h3, h4, h5, h6, p, address, figcaption, strong {
+  font-size: 14px;
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+small {
+  font-size: 10px;
+  font-size: 1rem; }
+
+/* Style
+   ========================================================================== */
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption {
+  text-align: left; }
+
+th {
+  font-weight: bold; }
+
+th, td {
+  vertical-align: top; }
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="tel"] {
+  margin: 0;
+  line-height: normal;
+  *font-size: 12px; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  margin: 0;
+  vertical-align: top;
+  resize: vertical; }
+
+address {
+  font-style: normal;
+  font-weight: normal; }
+
+img {
+  vertical-align: top;
+  -ms-interpolation-mode: bicubic; }
+
+object, embed, iframe {
+  vertical-align: top;
+  outline: none;
+  max-width: 100%; }
+
+em, strong {
+  font-style: normal;
+  font-weight: bold; }
+
+mark {
+  color: inherit;
+  background-color: inherit;
+  font-weight: bold; }
+
+sup,
+sub {
+  font-size: 0.75em; }
+
+sup {
+  vertical-align: super; }
+
+sub {
+  vertical-align: sub; }
+
+*,
+*:after,
+*:before {
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Root
+   ========================================================================== */
+html {
+  height: 100%; }
+
+body {
+  position: relative;
+  min-width: 768px;
+  background-color: #fff;
+  color: #444;
+  line-height: 1.8; }
+
+@media only screen and (max-width: 800px) {
+  body {
+    min-width: 0; } }
+
+@media only screen and (max-width: 640px) {
+  body {
+    line-height: 1.9; } }
+
+/* Container
+   ========================================================================== */
+.container {
+  overflow: hidden; }
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    margin-left: 0; } }
+
+.section,
+.top {
+  position: relative;
+  width: 100%; }
+
+/* Overlay
+   ========================================================================== */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  margin-left: 615px;
+  background-color: #f1ece9;
+  content: ''; }
+
+@media only screen and (max-width: 800px) {
+  .overlay {
+    margin-left: 0; } }
+
+/* PageTop
+   ========================================================================== */
+.pagetop {
+  position: fixed;
+  right: 10px;
+  z-index: 10; }
+  .pagetop img {
+    width: 40px;
+    height: 40px; }
+  .pagetop:hover {
+    opacity: 0.8;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+
+/* Link
+   ========================================================================== */
+a {
+  display: block;
+  cursor: pointer;
+  color: #333333; }
+
+a:link {
+  text-decoration: none; }
+
+a:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: none;
+  color: #415b7f; }
+
+/* Font size
+   ========================================================================== */
+.size-xsmall {
+  font-size: 10px;
+  font-size: 1rem; }
+
+.size-small {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+@media only screen and (max-width: 640px) {
+  .size-small {
+    font-size: 10px;
+    font-size: 1rem; } }
+
+.size-small-ex {
+  font-size: 13px;
+  font-size: 1.3rem; }
+
+.size-medium {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.size-large {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.size-xlarge {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.size-xxlarge {
+  font-size: 20px;
+  font-size: 2rem; }
+
+/* Break
+   ========================================================================== */
+.br {
+  padding-left: 10px; }
+
+@media only screen and (max-width: 640px) {
+  br.spHidden {
+    display: none; }
+  .br:before {
+    content: "\A";
+    white-space: pre;
+    padding-left: 0; } }
+
+.textHide {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap; }
+
+/* Font weight
+   ========================================================================== */
+.fwn {
+  font-weight: normal !important; }
+
+.fwb {
+  font-weight: bold !important; }
+
+/* Font color
+   ========================================================================== */
+/* Float
+   ========================================================================== */
+.pull-none {
+  float: none !important; }
+
+.pull-left {
+  float: left !important; }
+
+.pull-right {
+  float: right !important; }
+
+.clear-both {
+  clear: both !important; }
+
+.clear-left {
+  clear: left !important; }
+
+.clear-right {
+  clear: right !important; }
+
+/* Align
+   ========================================================================== */
+/* Horizontal */
+.tal {
+  text-align: left !important; }
+
+.tac {
+  text-align: center !important; }
+
+.tar {
+  text-align: right !important; }
+
+.align-flap {
+  text-align: justify;
+  text-justify: inter-ideograph; }
+
+/* Vertical */
+.align-top {
+  vertical-align: top !important; }
+
+.align-middle {
+  vertical-align: middle !important; }
+
+.align-bottom {
+  vertical-align: bottom !important; }
+
+.align-baseline {
+  vertical-align: baseline !important; }
+
+/* State
+  ========================================================================== */
+.dn {
+  display: none; }
+
+.db {
+  display: block; }
+
+.di {
+  display: initial; }
+
+/* Clearfix
+  ========================================================================== */
+.cf:after {
+  content: "";
+  display: block;
+  clear: both; }
