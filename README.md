@@ -31,5 +31,5 @@ $ git clone https://github.com/corporate-site.git
 -- 記述途中 --
 
 * 運用フローは以下  
- <a href="https://github.com/corporate-site/SERVEROPE.md" target="_blank">フロントエンド開発環境構築手順</a>
+ <a href="https://github.com/r-takanoyuri/corporate-site/blob/master/SERVEROPE.md" target="_blank">開発環境構築手順</a>
 
