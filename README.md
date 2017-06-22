@@ -33,3 +33,21 @@ $ git clone https://github.com/corporate-site.git
 * 運用フローは以下  
  <a href="https://github.com/r-takanoyuri/corporate-site/blob/master/SERVEROPE.md" target="_blank">開発環境構築手順</a>
 
+
+## 推奨環境(2017.06.22現在)
+Windows
+　├　Internet Explorer 11
+　├　Microsoft Edge
+　├　Mozilla FireFox 最新版
+　└　Google Chrome 最新版
+
+Macintosh
+　├　Mozilla FireFox 最新版
+　├　Safari 最新版
+　└　Google Chrome 最新版
+
+スマートフォン
+　├　iOS
+　　└　Safari 最新版（iOS 7以上）
+　└　Android
+　　└　標準ブラウザ 最新版（Android 4.4以上）
