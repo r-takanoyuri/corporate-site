@@ -9,7 +9,7 @@
 
 ```
 $ cd hogehoge
-$ git clone https://github.com/corporate-site.git
+$ git clone https://github.com/r-takanoyuri/corporate-site.git
 ```
 
 * 以降は、適宜checkout / pullしてください
